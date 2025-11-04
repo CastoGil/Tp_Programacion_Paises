@@ -19,7 +19,8 @@ def validar_entero_positivo(valor):
     return True
 
 def validar_existencia_pais(paises, nombre):
+    """Verifica si un país ya existe en la lista (coincidencia insensible a mayúsculas)."""
     for pais in paises:
         if pais["nombre"].lower() == nombre.lower():
-            return False
-    return True
+            return True  
+    return False 
