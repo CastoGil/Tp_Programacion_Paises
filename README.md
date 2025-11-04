@@ -23,17 +23,18 @@ TP_Programacion_Paises/
 │   ├── estadisticas.py
 │   ├── busquedas.py
 │   ├── filtros.py
-│   ├── reportes.py
 │   └── main.py
 └── README.md
 ```
 
+---
 
+## 👥 Integrantes y Roles
 
 | Integrante       | Comisión | Rama GitHub   | Rol principal                                                  |
 | ---------------- | -------- | ------------- | -------------------------------------------------------------- |
 | **Casto Gil**    | 5        | `rama-casto`  | Gestión de datos, validaciones, ordenamientos y menú principal |
-| **Alejo Almada** | 1        | `rama-almada` | Búsquedas, filtros, estadísticas y submenú de reportes         |
+| **Alejo Almada** | 1        | `rama-almada` | Búsquedas, filtros y estadísticas                              |
 
 ---
 
@@ -47,7 +48,7 @@ TP_Programacion_Paises/
 | **Estadísticas (promedios, min, max, conteo)**      | —                          | `estadisticas.py`                                   |
 | **Búsquedas (exacta/parcial)**                      | —                          | `busquedas.py`                                      |
 | **Filtros (continente, población, superficie)**     | —                          | `filtros.py`                                        |
-| **Menú e integración general**                      | `main.py` (Casto)          | `reportes.py` (submenú de estadísticas/reportes)    |
+| **Menú e integración general**                      | `main.py` (Casto)          | `estadisticas.py` (consultas y reportes)            |
 | **Persistencia (guardar CSV)**                      | `datos.py`                 | —                                                   |
 | **Pruebas y presentación**                          | Testeo de flujo completo   | Testeo de búsquedas y filtros                       |
 | **Trabajo en equipo / documentación**               | Coordinación Git / README  | Ejemplos y documentación interna                    |
@@ -65,7 +66,7 @@ TP_Programacion_Paises/
 3. Buscar país               → busquedas.py (Alejo)
 4. Filtrar países            → filtros.py (Alejo)
 5. Ordenar países            → ordenamiento.py (Casto)
-6. Mostrar estadísticas      → reportes.py + estadisticas.py (Alejo)
+6. Mostrar estadísticas      → estadisticas.py (Alejo)
 7. Guardar cambios           → datos.py (Casto)
 8. Salir                     → main.py (Casto)
 ----------------------------------------
@@ -138,7 +139,7 @@ Cantidad de países por continente:
 
 1. 🎬 Introducción y objetivos — *ambos integrantes*  
 2. 🧱 Gestión de datos, validaciones y ordenamientos — *Casto Gil*  
-3. 🔎 Búsquedas, filtros y reportes/estadísticas — *Alejo Almada*  
+3. 🔎 Búsquedas, filtros y estadísticas — *Alejo Almada*  
 4. 🧭 Conclusiones y reflexión final — *ambos integrantes*
 
 ---
