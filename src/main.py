@@ -24,7 +24,7 @@ def mostrar_menu():
           """)
     
 def main ():
-    ruta = "data/paises.csv"
+    ruta = "../data/paises.csv"
     paises= leer_csv(ruta)
     
     if len(paises)==0:
