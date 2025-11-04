@@ -24,7 +24,6 @@ def validar_entero_positivo(valor):
     return True
 
 def validar_existencia_pais(paises, nombre):
-    
     for pais in paises:
         if pais["nombre"].lower() == nombre.lower():
             return True  
