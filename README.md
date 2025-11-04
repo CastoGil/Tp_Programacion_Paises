@@ -28,9 +28,7 @@ TP_Programacion_Paises/
 └── README.md
 ```
 
----
 
-## 👥 Integrantes y Roles
 
 | Integrante       | Comisión | Rama GitHub   | Rol principal                                                  |
 | ---------------- | -------- | ------------- | -------------------------------------------------------------- |
