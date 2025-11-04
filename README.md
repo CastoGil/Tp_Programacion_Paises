@@ -78,9 +78,6 @@ Guardar cambios → datos.py (Casto)
 
 Salir → main.py (Casto)
 
-## 🧮 Ejemplo de Ejecución
-
----
 
 ## ⚙️ Ejecución
 
@@ -114,44 +111,46 @@ Cantidad de países por continente:
  - Asia: 2
 
 
-📘 Metodología de Trabajo
+## 🧩 Metodología de Trabajo
 
-Control de versiones con Git y GitHub (flujo por ramas).
+- 🧱 **Control de versiones:** Flujo colaborativo con Git y GitHub (ramas paralelas y Pull Requests).
+- 🌿 **Ramas de desarrollo:** `rama-casto` y `rama-almada`.
+- ✅ **Validaciones:** Sin uso de `try/except`, únicamente con estructuras vistas en Programación 1.
+- ⚙️ **Estructura modular:** Funciones pequeñas, reutilizables y documentadas.
+- 🧾 **CSV validado:** Se omiten líneas con errores y se muestra un mensaje claro al usuario.
+- 🧪 **Pruebas:** Cada módulo fue probado individualmente antes de fusionarse a `main`.
+- 📋 **Criterios UTN:** Cumple con la rúbrica de **modularización**, **legibilidad** y **validación de datos**.
 
-Ramas de desarrollo: rama-casto y rama-almada.
+---
 
-Validaciones manuales sin try/except, de acuerdo al nivel de la materia.
+## 📂 Repositorio y Documentación
 
-Estructura modular: funciones pequeñas, reutilizables y documentadas.
+- 🧭 **Repositorio GitHub:**  
+  [https://github.com/CastoGil/Tp_Programacion_Paises](https://github.com/CastoGil/Tp_Programacion_Paises)
 
-CSV validado: se omiten líneas con errores y se muestra un mensaje claro.
+- 📘 **Informe teórico:**  
+  `/docs/informe_teorico.pdf`
 
-Pruebas individuales antes de fusionar cada módulo a main.
+- 🌍 **Datos:**  
+  `/data/paises.csv`
 
-Cumple con los criterios de modularización, legibilidad y validación de datos definidos en la rúbrica de corrección UTN.
+---
 
-📂 Repositorio y Documentación
+## 🎥 Video de Exposición
 
-Repositorio GitHub: https://github.com/CastoGil/Tp_Programacion_Paises
+**Duración estimada:** 10 – 15 minutos  
 
-Informe teórico: /docs/informe_teorico.pdf
+**Estructura sugerida del video:**
+1. 🎬 *Introducción y objetivos* — *ambos integrantes*  
+2. 🧱 *Gestión de datos, validaciones y ordenamientos* — *Casto Gil*  
+3. 🔎 *Búsquedas, filtros y reportes/estadísticas* — *Alejo Almada*  
+4. 🧭 *Conclusiones y reflexión final* — *ambos integrantes*
 
-Datos: /data/paises.csv
+---
 
-🎥 Video de Exposición
+## 📄 Cátedra
 
-Duración estimada: 10 – 15 minutos
-
-Introducción y objetivos — ambos integrantes
-
-Gestión de datos, validaciones y ordenamientos — Casto Gil
-
-Búsquedas, filtros y reportes/estadísticas — Alejo Almada
-
-Conclusiones y reflexión final — ambos
-
-## 📄 Créditos y Cátedra
-Proyecto académico presentado en la **Tecnicatura Universitaria en Programación — UTN**  
+**Tecnicatura Universitaria en Programación — UTN**  
 Materia: **Programación 1**  
-Tutores: **Martin Garcia y Matias Torres**  
-Comisiones: 1 y 5 — 2° Cuatrimestre 2025
+Tutores: **Martín García** y **Matías Torres**  
+Comisiones: **1 y 5 — 2° Cuatrimestre 2025**
