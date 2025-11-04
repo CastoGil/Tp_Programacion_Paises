@@ -8,26 +8,25 @@ Desarrollar una aplicación modular en **Python** que permita gestionar informac
 
 ---
 
-
 ## 🧩 Estructura del Proyecto
-
+```bash
 TP_Programacion_Paises/
 ├── data/
-│ └── paises.csv
+│   └── paises.csv
 ├── docs/
-│ └── informe_teorico.pdf
+│   └── informe_teorico.pdf
 ├── src/
-│ ├── init.py
-│ ├── datos.py
-│ ├── validaciones.py
-│ ├── ordenamiento.py
-│ ├── estadisticas.py
-│ ├── busquedas.py
-│ ├── filtros.py
-│ ├── reportes.py
-│ └── main.py
+│   ├── __init__.py
+│   ├── datos.py
+│   ├── validaciones.py
+│   ├── ordenamiento.py
+│   ├── estadisticas.py
+│   ├── busquedas.py
+│   ├── filtros.py
+│   ├── reportes.py
+│   └── main.py
 └── README.md
----
+
 
 
 ---
