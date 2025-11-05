@@ -5,9 +5,10 @@ from ordenamiento import mostrar_menu_ordenamiento
 # from estadisticas import mostrar_estadisticas
 
 # ------------------------------------------------------
-# MENÚ PRINCIPAL
+# - Menú Principal
 # ------------------------------------------------------
 def mostrar_menu():
+   
     print("""
 ========================================
      GESTIÓN DE PAÍSES EN PYTHON
@@ -20,33 +21,54 @@ def mostrar_menu():
 6. Mostrar estadísticas
 7. Guardar cambios
 8. Salir
----------------------------------------
-          """)
-    
-def main ():
+----------------------------------------
+""")
+
+
+def main():
+    """Ejecución principal del programa."""
     ruta = "../data/paises.csv"
-    paises= leer_csv(ruta)
-    
-    if len(paises)==0:
-        print("No se pudieron cargar los paises (verifique el CSV).")
+    paises = leer_csv(ruta)
+
+    if len(paises) == 0:
+        print("- No se pudieron cargar los países. Verifique el CSV.")
         return
-    
-    opcion= ""
-    while opcion !="8":
+
+    opcion = ""
+    while opcion != "8":
         mostrar_menu()
-        opcion= input("Seleccione una opcion: ").strip()
+        opcion = input("Seleccione una opción (1-8): ").strip()
+
         
-        if   opcion=="1": agregar_pais(paises)
-        elif opcion=="2": actualizar_pais(paises)
-        # elif opcion=="3": buscar_pais(paises)
-        # elif opcion=="4": filtrar_menu(paises)
-        elif opcion=="5": mostrar_menu_ordenamiento(paises)
-        # elif opcion=="6": mostrar_estadisticas(paises)
-        elif opcion=="7": guardar_csv(paises, ruta)
-        elif opcion=="8": 
-            print("Programa finalizado correctamente. ¡Hasta luego!")
-        else:
-            print("Opcion invalida. Intente nuevamente.")
-            
-if __name__=="__main__":
+        while opcion not in ["1", "2", "3", "4", "5", "6", "7", "8"]:
+            print("- Opción inválida. Intente nuevamente.")
+            opcion = input("Seleccione una opción (1-8): ").strip()
+
+        try:
+            if opcion == "1":agregar_pais(paises)
+
+            elif opcion == "2":actualizar_pais(paises)
+
+            # elif opcion == "3":
+            #     buscar_pais(paises)
+
+            # elif opcion == "4":
+            #     filtrar_menu(paises)
+
+            elif opcion == "5":mostrar_menu_ordenamiento(paises)
+
+            # elif opcion == "6":
+            #     mostrar_estadisticas(paises)
+
+            elif opcion == "7":guardar_csv(paises, ruta)
+
+            elif opcion == "8":
+                print("- Programa finalizado correctamente. ¡Hasta luego!")
+                break
+
+        except Exception as e:
+            print(f"- Error inesperado: {e}")
+
+
+if __name__ == "__main__":
     main()
