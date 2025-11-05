@@ -11,7 +11,7 @@ from validaciones import (
 
 
 def leer_csv(ruta):
-    """Lee el archivo CSV y devuelve una lista de países válidos."""
+    
     paises = []
     try:
         with open(ruta, "r", encoding="utf-8") as archivo:
