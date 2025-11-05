@@ -1,32 +1,39 @@
 # ------------------------------------------------------
-# Validaciones
+# — Validaciones de datos
 # ------------------------------------------------------
 
 def validar_texto_no_vacio(texto):
-    texto=texto.strip()
-    if texto=="":
-        print("- El texto no puede estar vacio.")
+    
+    texto = texto.strip()
+    if texto == "":
+        print("❌ El campo no puede estar vacío.")
         return False
-   
+
     for letra in texto:
         if not (letra.isalpha() or letra == " "):
-            print("- El nombre solo puede contener letras y espacios.")
+            print("- Solo se permiten letras y espacios.")
             return False
     return True
 
+
 def validar_entero_positivo(valor):
-    if not valor.isdigit():
-        print("- Debe ingresar un número entero positivo.")
+   
+    try:
+        numero = int(valor)
+        if numero <= 0:
+            print("- El número debe ser mayor que cero.")
+            return False
+        return True
+    except ValueError:
+        print("- Debe ingresar un número entero válido.")
         return False
-    if int(valor) <= 0:
-        print("- El número debe ser mayor que cero.")
-        return False
-    return True
+
 
 def validar_existencia_pais(paises, nombre):
     
-    for pais in paises:
-        if pais["nombre"].lower() == nombre.lower():
-            return True  
-    return False 
-
+    i = 0
+    while i < len(paises):
+        if paises[i]["nombre"].lower() == nombre.lower():
+            return True
+        i += 1
+    return False
