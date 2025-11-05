@@ -111,16 +111,15 @@ Cantidad de países por continente:
 
 - **Control de versiones:** Flujo colaborativo con **Git y GitHub**, mediante ramas paralelas y Pull Requests.  
 - **Ramas de desarrollo:** `rama-casto` y `rama-almada`.  
-- **Validaciones y control de errores:**  
-  - Se aplican estructuras `try/except` solo en operaciones críticas (lectura, escritura, conversiones).  
-  - Se implementan **loops bloqueantes** para re-solicitar datos hasta que sean válidos, cumpliendo la rúbrica de “Interacción y validación de entradas”.  
+- **Validaciones bloqueantes:**  
+  - Cada ingreso de dato se controla con bucles while que solicitan nuevamente hasta ser válido.
+  - No se utilizan estructuras avanzadas como try/except.  
 - **Estructuras de control:**  
-  - Uso explícito de `while` loops y contadores.
-  - Menú interactivo con control de opciones inválidas.  
+  - Uso de while con contadores manuales en lugar de for.
+  - Validación de opciones incorrectas del menú.  
 - **Estructura modular:** Funciones pequeñas, reutilizables y documentadas.  
 - **Validación de CSV:** Se omiten líneas con errores mostrando mensajes claros.  
 - **Pruebas unitarias:** Cada módulo probado antes de fusionarse a `main`.  
-- **Cumplimiento académico:** Alineado con la **rúbrica UTN** (modularización, validación, legibilidad, manejo de errores y control de flujo).
 
 
 ---
