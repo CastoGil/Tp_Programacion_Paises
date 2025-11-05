@@ -21,24 +21,26 @@ def ordenar_paises(paises, clave, descendente=False):
 
 def mostrar_menu_ordenamiento(paises):
     
+    print("=" * 40)
+    print("         ORDENAR PAÍSES")
+    print("=" * 40)
     print("""
-========================================
-        ORDENAR PAÍSES
-========================================
 1. Por nombre (A-Z)
 2. Por nombre (Z-A)
 3. Por población (ascendente)
 4. Por población (descendente)
 5. Por superficie (ascendente)
 6. Por superficie (descendente)
-----------------------------------------
 """)
 
     opcion = input("Seleccione una opción (1-6): ").strip()
+
+    
     while opcion not in ["1", "2", "3", "4", "5", "6"]:
         print("- Opción inválida. Intente nuevamente.")
         opcion = input("Seleccione una opción (1-6): ").strip()
 
+   
     if opcion == "1":
         ordenar_paises(paises, "nombre")
     elif opcion == "2":
@@ -52,7 +54,8 @@ def mostrar_menu_ordenamiento(paises):
     elif opcion == "6":
         ordenar_paises(paises, "superficie", True)
 
-    print("\n Lista ordenada correctamente:\n")
+    
+    print("\nLista ordenada correctamente:\n")
     print(f"{'Nombre':15} | {'Población':>12} | {'Superficie (km²)':>16}")
     print("-" * 50)
     for pais in paises:
