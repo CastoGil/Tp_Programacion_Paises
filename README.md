@@ -4,7 +4,7 @@
 ---
 
 ## 🧠 Objetivo  
-Desarrollar una aplicación modular en **Python** que permita gestionar información de países (nombre, población, superficie y continente) aplicando **listas**, **diccionarios**, **funciones**, **archivos CSV** y **validaciones**, según los contenidos de la materia **Programación 1**.
+Desarrollar una aplicación modular en **Python** que permita gestionar información de países (nombre, población, superficie y continente) aplicando **listas**, **diccionarios**, **funciones**, **archivos CSV** y **validaciones**, El sistema simula un proceso administrativo de gestión de datos de países, permitiendo altas, modificaciones, búsquedas y análisis estadísticos.
 
 ---
 
@@ -16,7 +16,6 @@ TP_Programacion_Paises/
 ├── docs/
 │   └── informe_teorico.pdf
 ├── src/
-│   ├── __init__.py
 │   ├── datos.py
 │   ├── validaciones.py
 │   ├── ordenamiento.py
@@ -50,7 +49,7 @@ TP_Programacion_Paises/
 | **Filtros (continente, población, superficie)**     | —                          | `filtros.py`                                        |
 | **Menú e integración general**                      | `main.py` (Casto)          | `estadisticas.py` (consultas y reportes)            |
 | **Persistencia (guardar CSV)**                      | `datos.py`                 | —                                                   |
-| **Pruebas y presentación**                          | Testeo de flujo completo   | Testeo de búsquedas y filtros                       |
+| **Pruebas y presentación**                          | Pruebas de integración y validación de flujo completo del sistema.                       |
 | **Trabajo en equipo / documentación**               | Coordinación Git / README  | Ejemplos y documentación interna                    |
 
 ---
@@ -83,16 +82,11 @@ Desde la carpeta `src`:
 python main.py
 ```
 
-O desde la raíz del proyecto:
-
-```bash
-python -m src.main
-```
-
 ---
 
 ## 📊 Ejemplo de Salida
 
+- Ejemplo de resultados obtenidos al ejecutar las funciones de estadísticas:
 ```
 🌍 País con mayor población: China (1,411,778,724)
 🏳️ País con menor población: Uruguay (3,423,108)
@@ -120,7 +114,7 @@ Cantidad de países por continente:
 - **Estructura modular:** Funciones pequeñas, reutilizables y documentadas.  
 - **Validación de CSV:** Se omiten líneas con errores mostrando mensajes claros.  
 - **Pruebas unitarias:** Cada módulo probado antes de fusionarse a `main`.  
-
+- No se utilizaron librerías externas; únicamente módulos nativos de Python.
 
 ---
 
