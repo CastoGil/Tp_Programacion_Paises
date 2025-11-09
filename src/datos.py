@@ -73,7 +73,7 @@ def leer_csv(ruta):
 # Función: Guardar CSV
 # ------------------------------------------------------
 def guardar_csv(paises, ruta):
-    """Guarda los datos actualizados en el archivo CSV, solo si existen países válidos."""
+    
     if len(paises) == 0:
         print("- No hay países cargados para guardar. Operación cancelada.")
         return
@@ -96,7 +96,7 @@ def guardar_csv(paises, ruta):
 # Función: Agregar país
 # ------------------------------------------------------
 def agregar_pais(paises):
-    """Permite agregar un nuevo país validando todos los campos requeridos."""
+    
     print("\n" + "=" * 35)
     print("        AGREGAR PAÍS")
     print("=" * 35)
@@ -138,7 +138,7 @@ def agregar_pais(paises):
 # Función: Actualizar país
 # ------------------------------------------------------
 def actualizar_pais(paises):
-    """Permite modificar solo la población y superficie de un país existente."""
+    
     print("\n" + "=" * 35)
     print("       ACTUALIZAR PAÍS")
     print("=" * 35)
