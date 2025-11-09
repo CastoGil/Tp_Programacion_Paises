@@ -70,9 +70,14 @@ def main():
             guardar_csv(paises, ruta)
 
         elif opcion == "8":
-            print("- Programa finalizado correctamente. ¡Hasta luego!")
+            
+            print("\n¿Desea guardar los cambios antes de salir? (s/n)")
+            guardar = input("→ ").strip().lower()
+            if guardar == "s":
+                guardar_csv(paises, ruta)
+            print("\nGracias por utilizar el sistema de gestión de países.")
+            print("-" * 40)
             break
-
 
 if __name__ == "__main__":
     main()

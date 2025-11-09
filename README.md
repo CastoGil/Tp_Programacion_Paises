@@ -88,15 +88,16 @@ python main.py
 
 - Ejemplo de resultados obtenidos al ejecutar las funciones de estadísticas:
 ```
-🌍 País con mayor población: China (1,411,778,724)
-🏳️ País con menor población: Uruguay (3,423,108)
-📊 Promedio de población: 394,357,149
-📐 Promedio de superficie: 4,632,298 km²
+País con mayor población: China (1,411,778,724)
+País con menor población: Uruguay (3,423,108)
+Promedio de población: 394,357,149.00
+Promedio de superficie: 4,632,298.00 km²
 
 Cantidad de países por continente:
- - América: 5
- - Europa: 3
- - Asia: 2
+- América: 5
+- Europa: 3
+- Asia: 2
+
 ```
 
 ---
@@ -109,7 +110,7 @@ Cantidad de países por continente:
   - Cada ingreso de dato se controla con bucles while que solicitan nuevamente hasta ser válido.
   - No se utilizan estructuras avanzadas como try/except.  
 - **Estructuras de control:**  
-  - Uso de while con contadores manuales en lugar de for.
+  - Uso de while y if con contadores manuales.
   - Validación de opciones incorrectas del menú.  
 - **Estructura modular:** Funciones pequeñas, reutilizables y documentadas.  
 - **Validación de CSV:** Se omiten líneas con errores mostrando mensajes claros.  
