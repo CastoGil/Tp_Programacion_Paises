@@ -33,7 +33,7 @@ TP_Programacion_Paises/
 | Integrante       | Comisión | Rama GitHub   | Rol principal                                                  |
 | ---------------- | -------- | ------------- | -------------------------------------------------------------- |
 | **Casto Gil**    | 5        | `rama-casto`  | Gestión de datos, validaciones, ordenamientos y menú principal |
-| **Alejo Almada** | 1        | `rama-almada` | Búsquedas, filtros y estadísticas                              |
+| **Alejo Almada** | 1        | `rama-alejo` | Búsquedas, filtros y estadísticas                              |
 
 ---
 
@@ -104,7 +104,7 @@ Cantidad de países por continente:
 ## 🧱 Metodología de Trabajo
 
 - **Control de versiones:** Flujo colaborativo con **Git y GitHub**, mediante ramas paralelas y Pull Requests.  
-- **Ramas de desarrollo:** `rama-casto` y `rama-almada`.  
+- **Ramas de desarrollo:** `rama-casto` y `rama-alejo`.  
 - **Validaciones bloqueantes:**  
   - Cada ingreso de dato se controla con bucles while que solicitan nuevamente hasta ser válido.
   - No se utilizan estructuras avanzadas como try/except.  

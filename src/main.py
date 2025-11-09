@@ -5,8 +5,8 @@
 from datos import leer_csv, agregar_pais, actualizar_pais, guardar_csv
 from ordenamiento import mostrar_menu_ordenamiento
 from busquedas import buscar_pais
-# from filtros import filtrar_menu
-# from estadisticas import mostrar_estadisticas
+from filtros import filtrar_menu, filtrar_paises
+from estadisticas import mostrar_estadisticas, calcular_estadisticas
 
 
 def mostrar_menu():
@@ -57,14 +57,14 @@ def main():
         elif opcion == "3":
             buscar_pais(paises)
 
-        # elif opcion == "4":
-        #     filtrar_menu(paises)
+        elif opcion == "4":
+            filtrar_menu(paises)
 
         elif opcion == "5":
             mostrar_menu_ordenamiento(paises)
 
-        # elif opcion == "6":
-        #     mostrar_estadisticas(paises)
+        elif opcion == "6":
+            mostrar_estadisticas(paises)
 
         elif opcion == "7":
             guardar_csv(paises, ruta)
