@@ -132,15 +132,13 @@ Cantidad de países por continente:
 
 ---
 
-## 🎥 Video de Exposición
 
-**Duración estimada:** 10 – 15 minutos  
-**Estructura sugerida:**
+### 🎥 Video Explicativo — TPI Programación 1 (UTN 2025)
+[![Ver Video en YouTube](https://img.youtube.com/vi/yu6_il5qRdo/0.jpg)](https://www.youtube.com/watch?v=yu6_il5qRdo)
 
-1. 🎬 Introducción y objetivos — *ambos integrantes*  
-2. 🧱 Gestión de datos, validaciones y ordenamientos — *Casto Gil*  
-3. 🔎 Búsquedas, filtros y estadísticas — *Alejo Almada*  
-4. 🧭 Conclusiones y reflexión final — *ambos integrantes*
+> 📹 **Duración:** 13:15 minutos  
+> 👥 **Integrantes:** Casto Gil (Comisión 5) — Alejo Almada (Comisión 1)  
+> 🎯 En este video se explica el funcionamiento completo del sistema de gestión de países desarrollado en Python, mostrando las validaciones, filtros, ordenamientos y estadísticas, junto al flujo modular del código en Visual Studio Code.
 
 ---
 
